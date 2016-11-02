@@ -6,13 +6,37 @@ permalink: /contact/
 
 <section class="container">
   <h1>Get in touch</h1>
-  <p>
     <form action="https://getsimpleform.com/messages?form_api_token=4b21cbaaf4c01f6ae3678f2320184dcc" method="post">
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
   <input type='hidden' name='redirect_to' value='http://laurapearsoncounselling.ca/thankyou' />
   <!-- all your input fields here.... -->
-  <input type='text' name='test' />
-  <input type='submit' value='Test form' />
-</form>
+  <p>
+    <label>
+    Name:
+    <input type="text" name="name"  />
+      </label>
   </p>
+<P>
+  <label>
+Subject:
+    <input type="text" name="subject"  /></label>
+</P>
+
+<p>
+  <label>Email:
+  <input type="email" name="email" /></label>
+</p>
+<p>
+  <label>Phone:
+  <input type="phone" name="phone"  />
+  </label>
+</p>
+<p>
+  <label>Message:
+  <textarea name="message"></textarea></label>
+</p>
+
+  <input type='submit' value='Send message' />
+
+</form>
 </section>
