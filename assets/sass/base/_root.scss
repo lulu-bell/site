@@ -5,24 +5,133 @@ html {
   box-sizing: border-box;
 }
 
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
 *, ::before, ::after {
   box-sizing: inherit;
-
 }
 
-img{
-  opacity: 1;
-  transition: all 2s ease;
+html,
+body{
+  height: 100%;
+  width: 100%;
+  font-family: Garamond, 'Palatino Linotype', Georgia, serif;
+  padding:0;
+  margin: 0;
+  background: #EEE7D7;
+  color: #525252;
+}
 
-  &:focus{
-    filter: invert(1);
-    opacity: .5;
-    transform: rotate(10000deg);
+body{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.main{
+  max-width: 740px;
+  margin: 0 auto;
+
+  p{
+    line-height: 1.5;
   }
+}
+
+.header{
+  height: 60px;
+  background: #687b4f;
+  font-family: Garamond, 'Palatino Linotype', Georgia, serif;
+}
+
+.nav-contents{
+  //padding: 0 1rem;
+  max-width: 740px;
+  margin: 0 auto;
+
+  ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+  }
+
+  li{
+    flex: 0 0 auto;
+    padding: 0 2rem;
+
+    &:first-of-type{
+      padding-left: 0;
+    }
+  }
+
+  a{
+    line-height: 60px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.contact-container{
+  position: absolute;
+  right: 20px;
+  top: 0px;
+
+  a{
+    line-height: 60px;
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+.footer{
+  height: 110px;
+  color: #EEE7D7;
+  background: #594C45;
+}
+
+
+.contact-form{
+  width: 400px;
+
+  label{
+    font-weight: 700;
+    display: block;
+    width: 100%;
+
+    input,
+    textarea{
+
+      display: block;
+      height: 30px;
+      width: 100%;
+      padding: 0 5px;
+      border: 1px solid #594C45;
+      border-radius: 2px;
+    }
+
+    textarea{
+      padding: 10px;
+      min-height: 100px;
+    }
+
+  }
+
+  button{
+    //height: 40px;
+    background: #594C45;
+    color: #EEE7D7;
+    border: none;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    width: 400px;
+  }
+
 }
