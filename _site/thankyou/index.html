@@ -11,11 +11,7 @@
 ">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="http://laurapearsoncounselling.ca/thankyou/">
 
-  <link type="application/atom+xml" rel="alternate" href="http://laurapearsoncounselling.ca/feed.xml" title="Laura Pearson | Counselling Service" />
-
-  <script src="https://use.fontawesome.com/d28c7b9fac.js"></script>
 </head>
 
 
@@ -23,14 +19,15 @@
 
     <header class="header">
   <nav class="nav-contents">
-    <ul>
+    <button class="mobile-menu js-mobile-menu">Menu</button>
+    <ul class="nav js-nav">
       <li>
         <a href="/#about">About Laura</a>
         <li>
           <a href="/#counselling">Counselling</a>
         </li>
         <li>
-          <a href="/contact/">Contact</a>
+          <a href="/contact/">Schedule a Call</a>
         </li>
         <li>
           <a href="">Fees</a>
@@ -40,8 +37,7 @@
   </nav>
   <div class="contact-container">
     <a class="contact" href="/contact/">
-      Contact
-      <i class="fa fa-envelope" aria-hidden="true"></i>
+      Contact Me
     </a>
   </div>
 </header>
@@ -67,6 +63,34 @@
 
 </footer>
 
+
+    <script>
+    'use strict';
+
+    class mobileMenu {
+      constructor ()  {
+        this.menuTrigger = document.querySelector('.js-mobile-menu');
+        this.menu = document.querySelector('.js-nav');
+
+        this.showMenu = this.showMenu.bind(this);
+
+        this.addEventListeners();
+      }
+
+      addEventListeners () {
+        this.menuTrigger.addEventListener('click', this.showMenu);
+      }
+
+      showMenu ()  {
+        this.menu.classList.toggle('is-active');
+        this.menuTrigger.classList.toggle('is-active');
+      }
+
+}
+
+new mobileMenu();
+
+    </script>
 
   </body>
 

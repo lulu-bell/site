@@ -27,40 +27,72 @@ body{
 
 .main{
   max-width: 740px;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
+  padding: 0 1rem;
 
   p{
     line-height: 1.5;
   }
 }
 
+button{
+  font-family: Garamond, 'Palatino Linotype', Georgia, serif;
+}
+
 .header{
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 60px;
   background: #687b4f;
-  font-family: Garamond, 'Palatino Linotype', Georgia, serif;
+  //font-family: Garamond, 'Palatino Linotype', Georgia, serif;
 }
 
 .nav-contents{
   //padding: 0 1rem;
-  max-width: 740px;
-  margin: 0 auto;
+
+  .mobile-menu{
+    border: 1px solid #fff;
+    border-radius: 2px;
+    background: transparent;
+    color: #fff;
+    height: 40px;
+    width: 70px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all .2s ease;
+
+    &.is-active{
+      background: #fff;
+      color: #687b4f;
+    }
+  }
 
   ul{
+    height: 100vh;
+    background: #687b4f;
+    background: rgba(104, 123, 79, 0.94);
+    margin-top: 0;
+    z-index: 10;
+    position: relative;
     display: flex;
-    margin: 0;
     padding: 0;
     list-style-type: none;
     justify-content: flex-start;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+    width: 70%;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-100vw);
+
+    &.is-active{
+      transform: translateX(0);
+    }
   }
 
   li{
     flex: 0 0 auto;
     padding: 0 2rem;
-
-    &:first-of-type{
-      padding-left: 0;
-    }
   }
 
   a{
@@ -92,11 +124,12 @@ body{
   height: 110px;
   color: #EEE7D7;
   background: #594C45;
+  min-height: 100px;
 }
 
 
 .contact-form{
-  width: 400px;
+  width: 100%;
 
   label{
     font-weight: 700;
@@ -131,7 +164,38 @@ body{
     font-size: 1.1rem;
     border-radius: 3px;
     margin-bottom: 40px;
-    width: 400px;
+    width: 100%;
   }
 
+}
+
+@media screen and (min-width: 600px){
+  .main{
+    padding: 0;
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+
+  .nav-contents{
+    max-width: 740px;
+    margin: 0 auto;
+
+
+    ul{
+      height: inherit;
+      flex-flow: row nowrap;
+      margin: 0;
+      transform: translateX(0);
+    }
+
+    li:first-of-type{
+      padding-left: 0;
+    }
+  }
+
+  .contact-form{
+    width: 400px;
+  }
 }

@@ -14,6 +14,34 @@
 
     {% include footer.html %}
 
+    <script>
+    'use strict';
+
+    class mobileMenu {
+      constructor ()  {
+        this.menuTrigger = document.querySelector('.js-mobile-menu');
+        this.menu = document.querySelector('.js-nav');
+
+        this.showMenu = this.showMenu.bind(this);
+
+        this.addEventListeners();
+      }
+
+      addEventListeners () {
+        this.menuTrigger.addEventListener('click', this.showMenu);
+      }
+
+      showMenu ()  {
+        this.menu.classList.toggle('is-active');
+        this.menuTrigger.classList.toggle('is-active');
+      }
+
+}
+
+new mobileMenu();
+
+    </script>
+
   </body>
 
 </html>
