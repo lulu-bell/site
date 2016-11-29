@@ -16,7 +16,7 @@ body{
   font-family: Garamond, 'Palatino Linotype', Georgia, serif;
   padding:0;
   margin: 0;
-  background: #EEE7D7;
+  background: #fffbf5;
   color: #525252;
 }
 
@@ -26,12 +26,20 @@ body{
 }
 
 .main{
-  max-width: 740px;
+  max-width: 100%;
   margin: 80px auto 0 auto;
+}
+
+.container{
+  width: 100%;
   padding: 0 1rem;
 
   p{
     line-height: 1.5;
+  }
+
+  &:last-of-type{
+    margin-bottom: 60px;
   }
 }
 
@@ -42,7 +50,7 @@ button{
 .header{
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background: #687b4f;
   //font-family: Garamond, 'Palatino Linotype', Georgia, serif;
@@ -85,7 +93,7 @@ button{
     flex-flow: column nowrap;
     width: 70%;
     transition: transform .3s ease-in-out;
-    transform: translateX(-100vw);
+    transform: translateX(-200vw);
 
     &.is-active{
       transform: translateX(0);
@@ -123,10 +131,10 @@ button{
 }
 
 .footer{
-  height: 110px;
+  height: 200px;
   color: #EEE7D7;
   background: #594C45;
-  min-height: 100px;
+  padding: 10px 20px;
 }
 
 
@@ -171,13 +179,65 @@ button{
 
 }
 
-@media screen and (min-width: 600px){
+.more-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  .info-block{
+    flex: 1 0 auto;
+    margin: 0;
+  }
+
+  ul  strong{
+    display: inline-block;
+    width: 100%;
+  }
+
+  li + li{
+    margin-top: 15px;
+  }
+
+}
+
+.info-block picture{
+  width: 100%;
+}
+
+.about img {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media screen and (min-width: 700px){
   .main{
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 0;
+  }
+
+  .about{
+    img{
+      width: 160px;
+      margin-right: 20px;
+      float: left;
+      margin-bottom: 20px;
+    }
   }
 
   .mobile-menu{
     display: none;
+  }
+
+  .container{
+    max-width: 760px;
+    padding: 0;
   }
 
   .nav-contents{
@@ -199,5 +259,22 @@ button{
 
   .contact-form{
     width: 400px;
+  }
+
+  .more-info{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .info-block{
+      flex: 1 0 30%;
+      margin: 20px;
+    }
+
+    .info-block-box{
+      flex: 1 0 45%;
+    }
   }
 }

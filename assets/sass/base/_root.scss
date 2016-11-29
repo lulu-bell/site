@@ -191,6 +191,15 @@ button{
     margin: 0;
   }
 
+  ul  strong{
+    display: inline-block;
+    width: 100%;
+  }
+
+  li + li{
+    margin-top: 15px;
+  }
+
 }
 
 .info-block picture{
