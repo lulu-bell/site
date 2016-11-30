@@ -8,9 +8,7 @@
 # Site settings
 title: Laura Pearson | Counselling Service
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Laura Pearson Counselling Services. Toronto based affliate member of the Ontario Association of counsellors, consultants, psychotherapists and Psychomistraist. Counselling for Addictions, Mental Health, Compassion Fatigue and Life Transitions
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://laurapearsoncounselling.ca" # the base hostname & protocol for your site
 
