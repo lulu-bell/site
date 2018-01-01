@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Happy New Year 2018"
+date: "2018-01-01 13:18"
+permalink: /blog/:title/
+published: true
+categories: misc
+tags: [misc]
+short-desc: It is 2018!  The New Year often is a time for self reflection...
+---
+
+<header>
+<h1>{{page.title}}</h1>
+{{ page.date | date: '%B %d, %Y' }}
+</header>
+
+
+It is 2018!  The New Year often is a time for self reflection this can be a positive experience for some. You maybe celebrating your journey so far and considering what is next for you.  For some, it  involves measuring your self  based on where your think you should be, based on your bench marks or maybe others expectations.  Maybe you don't even know what your goals are. This New Years I encourage you to be self-compassionate, be kind and friendly to your self. Remember that what ever you are struggling with you are not alone in your struggle, many others are struggling too.  Try to bring a mental curiosity and empathy to your feelings, thoughts and body.
+
+With this in mind I wish you a peaceful and joyful New Year.
