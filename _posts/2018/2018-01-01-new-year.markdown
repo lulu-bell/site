@@ -6,7 +6,7 @@ permalink: /blog/:title/
 published: true
 categories: misc
 tags: [misc]
-short-desc: It is 2018!  The New Year often is a time for self reflection...
+short-desc: It is 2018!  The New Year often is a time for self reflection this can be a positive experience for some. You maybe celebrating your journey...
 ---
 
 <header>
