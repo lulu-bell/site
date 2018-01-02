@@ -144,9 +144,10 @@ button{
   }
 }
 
-.blog-short a{
+a{
   color: #1E9FE8;
   text-decoration-color: #FF518F;
+  text-decoration-skip: ink;
 }
 
 
@@ -178,8 +179,8 @@ button{
 
   button{
     //height: 40px;
-    background: #594C45;
-    color: #EEE7D7;
+    background: #007dba;
+    color: #fff;
     border: none;
     padding: 1rem 3rem;
     font-weight: 700;
