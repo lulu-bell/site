@@ -75,6 +75,7 @@ h1{
     border: 1px solid #fff;
     border-radius: 2px;
     background: transparent;
+    padding: 0; 
     color: #fff;
     height: 40px;
     width: 80px;
@@ -108,6 +109,7 @@ h1{
 
     &.is-active{
       transform: translateX(0);
+      background: #007dba;
     }
   }
 
@@ -158,6 +160,7 @@ a{
   color: #1E9FE8;
   text-decoration-color: #FF518F;
   text-decoration-skip: ink;
+  font-weight: 500;
 }
 
 
