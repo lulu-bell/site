@@ -5,7 +5,10 @@
 
   {% if page.layout == 'post' %}
   <meta property='og:title' content="{{ page.title }}" />
-  <meta property='og:image' content='' />
+  {% if page.imageref %}
+    <meta property='og:image' content=' {{ site.images }}{{ page.imageref }}' />
+  {% endif %} 
+
   <meta property='og:description' content="{{ page.short-desc }}" />
   <meta property='og:url' content='{{ site.url }}{{ page.url }}' />
   {% endif %}

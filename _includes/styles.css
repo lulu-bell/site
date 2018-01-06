@@ -25,6 +25,10 @@ body{
   flex-flow: column nowrap;
 }
 
+img{
+  width: 100%;
+}
+
 h2 a{
   text-decoration: none;
   color: #131212;
@@ -75,7 +79,7 @@ h1{
     border: 1px solid #fff;
     border-radius: 2px;
     background: transparent;
-    padding: 0; 
+    padding: 0;
     color: #fff;
     height: 40px;
     width: 80px;
