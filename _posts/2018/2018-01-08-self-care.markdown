@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Self-Care"
+date: "2018-01-08 20:03"
+permalink: /blog/:title/
+published: true
+categories: misc
+tags: [misc]
+short-desc: Is your self care more like a laundry lists of should and should-nots? It may be time to reflect on what self care feels like to you.
+---
+
+Is your self care more like a laundry lists of should and should-nots? It may be time to reflect on what self care feels like to you.
+Your needs change not just over time but day today and your self care should reflect activities that genuinely meet your personal needs.
+Bring self -compassion to your self care, engage in a friendly inquiry with your self to discover what truly sustains and supports you.  
